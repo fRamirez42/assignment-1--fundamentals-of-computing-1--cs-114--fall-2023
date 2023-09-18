@@ -41,15 +41,11 @@ public class Assignment1 {
 
     int stringSize = 0;
 
-    //while(stringSize != 5){ 
-
     System.out.println("Enter a 5 character word: ");
 
     String5 = scan.nextLine();
 
     stringSize = String5.length();
-
-    //}
 
     System.out.println(stringSize);
     
@@ -62,10 +58,15 @@ public class Assignment1 {
 
     int high = 16384;
 
-    int result = r.nextInt(high-low) + low;
+    int randomNumber = r.nextInt(high-low) + low;
 
-    System.out.println(result);
+    System.out.println("Random Number being Generated");
 
+    
+    // Output the result
+
+
+    System.out.println("Your new String is: " + celcius + "In the works" + randomNumber);
 
   }
 }
