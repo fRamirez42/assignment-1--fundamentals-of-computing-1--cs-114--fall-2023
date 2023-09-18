@@ -3,7 +3,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Assignment1 {
+
   public static void main(String[] args) {
+
+    Scanner scan = new Scanner(System.in);
+    Scanner word = new Scanner(System.in);
     
     //Block names to be put here
 
@@ -22,8 +26,6 @@ public class Assignment1 {
 
     double number = 0.0;
 
-    Scanner scan = new Scanner(System.in);
-
     System.out.println("enter a number in Fahrenheit: ");
 
     number = scan.nextDouble();
@@ -34,7 +36,6 @@ public class Assignment1 {
 
     System.out.println(celcius + " C");
 
-
     //5 characters string
 
     String String5;
@@ -43,12 +44,17 @@ public class Assignment1 {
 
     System.out.println("Enter a 5 character word: ");
 
-    String5 = scan.nextLine();
+    String5 = word.nextLine();
 
     stringSize = String5.length();
 
-    System.out.println(stringSize);
-    
+    String reverse = new StringBuffer(String5).reverse().toString();
+
+    System.out.println(reverse);
+
+    String finishedSt = reverse.substring(1);
+
+    System.out.println(finishedSt);
 
     //Create a random number
 
@@ -67,6 +73,8 @@ public class Assignment1 {
 
 
     System.out.println("Your new String is: " + celcius + "In the works" + randomNumber);
+
+    scan.close();
 
   }
 }
