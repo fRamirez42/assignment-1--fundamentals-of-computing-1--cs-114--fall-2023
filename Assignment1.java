@@ -6,8 +6,12 @@ public class Assignment1 {
 
   public static void main(String[] args) {
 
+    //Variables and other
+
     Scanner scan = new Scanner(System.in);
     Scanner word = new Scanner(System.in);
+    double celciusp1;
+    double celcius;
     double number = 0.0;
     String String5;
     char[] cArray = new char[10]; 
@@ -17,7 +21,9 @@ public class Assignment1 {
     Random r = new Random();
     int low = 32;
     int high = 16384;
+    int randomNumber;
 
+    //****************************************************************************** */
     
     //Block names to be put here
 
@@ -32,19 +38,21 @@ public class Assignment1 {
     System.out.println();
 
 
-    //Farenheit to Celcius
+    //****************************************************************************** */
 
-    
+    //Farenheit to Celcius change
+
 
     System.out.println("enter a number in Fahrenheit: ");
 
     number = scan.nextDouble();
 
-    double celciusp1 = (number - 32);
+    celciusp1 = (number - 32);
 
-    double celcius = celciusp1 * 5/9;
+    celcius = celciusp1 * 5/9;
 
 
+    //****************************************************************************** */
 
     //5 characters string
 
@@ -53,26 +61,32 @@ public class Assignment1 {
 
     String5 = word.nextLine();
 
-    stringSize = String5.length();
-
     reverse = new StringBuffer(String5).reverse().toString();
 
     finishedSt = reverse.substring(1, 4);
 
 
+    //***************************************************************************** */
+
+
     //Create a random number
 
-    int randomNumber = r.nextInt(high-low) + low;
+    randomNumber = r.nextInt(high-low) + low;
 
-    System.out.println("Random Number being Generated");
+    System.out.println("Random Number being Generated...");
 
-    
+
+    //**************************************************************************** */
+
     // Output the result
 
 
     System.out.println("Your new String is: " + celcius + finishedSt + randomNumber);
 
     scan.close();
+
+
+    //**************************************************************************** */
 
   }
 }
