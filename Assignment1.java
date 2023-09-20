@@ -6,18 +6,21 @@ public class Assignment1 {
 
   public static void main(String[] args) {
 
-    //Variables and other
+    //Variables
 
     Scanner scan = new Scanner(System.in);
     Scanner word = new Scanner(System.in);
+
     double celciusp1;
     double celcius;
     double numberInput = 0.0;
+
     String StringInput;
     char[] cArray = new char[10]; 
     int stringSize = 0;
     String finishedSt = "";
     String reverse = "";
+
     Random r = new Random();
     int low = 32;
     int high = 16384;
