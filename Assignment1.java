@@ -20,8 +20,8 @@ public class Assignment1 {
     String reverse;
 
     Random r = new Random();
-    int low = 32;
-    int high = 16384;
+    final int LOW = 32;
+    final int HIGH = 16384;
     int randomNumber;
 
     //****************************************************************************** */
@@ -72,7 +72,7 @@ public class Assignment1 {
 
     //Create a random number
 
-    randomNumber = r.nextInt(high-low) + low;
+    randomNumber = r.nextInt(HIGH-LOW) + LOW;
 
     System.out.println("Random Number being Generated...");
 
