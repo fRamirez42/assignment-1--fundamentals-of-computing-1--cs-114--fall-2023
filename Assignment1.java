@@ -13,13 +13,11 @@ public class Assignment1 {
 
     double celciusp1;
     double celcius;
-    double numberInput = 0.0;
+    double numberInput;
 
     String StringInput;
-    char[] cArray = new char[10]; 
-    int stringSize = 0;
-    String finishedSt = "";
-    String reverse = "";
+    String finishedSt;
+    String reverse;
 
     Random r = new Random();
     int low = 32;
@@ -87,6 +85,8 @@ public class Assignment1 {
     System.out.println("Your new String is: " + celcius + finishedSt + randomNumber);
 
     scan.close();
+
+    word.close();
 
 
     //**************************************************************************** */
