@@ -9,7 +9,7 @@ public class Assignment1 {
     //Variables
 
     Scanner scan = new Scanner(System.in);
-    Scanner word = new Scanner(System.in);
+   
 
     double celciusp1;
     double celcius;
@@ -52,19 +52,25 @@ public class Assignment1 {
 
     celcius = celciusp1 * 5/9;
 
+    System.out.println(celcius);
+
 
     //****************************************************************************** */
 
     //5 characters string
 
-
+    
     System.out.println("Enter a 5 character word: ");
 
-    StringInput = word.nextLine();
+    StringInput = scan.next();
 
     reverse = new StringBuffer(StringInput).reverse().toString();
 
     finishedSt = reverse.substring(1, 4);
+
+    System.out.println(finishedSt);
+
+    System.out.println(StringInput);
 
 
     //***************************************************************************** */
@@ -77,7 +83,7 @@ public class Assignment1 {
     System.out.println("Random Number being Generated...");
 
 
-    //**************************************************************************** */
+    // //**************************************************************************** */
 
     // Output the result
 
@@ -85,9 +91,6 @@ public class Assignment1 {
     System.out.println("Your new String is: " + celcius + finishedSt + randomNumber);
 
     scan.close();
-
-    word.close();
-
 
     //**************************************************************************** */
 
