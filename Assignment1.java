@@ -52,8 +52,6 @@ public class Assignment1 {
 
     celcius = celciusp1 * 5/9;
 
-    System.out.println(celcius);
-
 
     //****************************************************************************** */
 
@@ -67,11 +65,6 @@ public class Assignment1 {
     reverse = new StringBuffer(StringInput).reverse().toString();
 
     finishedSt = reverse.substring(1, 4);
-
-    System.out.println(finishedSt);
-
-    System.out.println(StringInput);
-
 
     //***************************************************************************** */
 
