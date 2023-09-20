@@ -12,8 +12,8 @@ public class Assignment1 {
     Scanner word = new Scanner(System.in);
     double celciusp1;
     double celcius;
-    double number = 0.0;
-    String String5;
+    double numberInput = 0.0;
+    String StringInput;
     char[] cArray = new char[10]; 
     int stringSize = 0;
     String finishedSt = "";
@@ -45,9 +45,9 @@ public class Assignment1 {
 
     System.out.println("enter a number in Fahrenheit: ");
 
-    number = scan.nextDouble();
+    numberInput = scan.nextDouble();
 
-    celciusp1 = (number - 32);
+    celciusp1 = (numberInput - 32);
 
     celcius = celciusp1 * 5/9;
 
@@ -59,9 +59,9 @@ public class Assignment1 {
 
     System.out.println("Enter a 5 character word: ");
 
-    String5 = word.nextLine();
+    StringInput = word.nextLine();
 
-    reverse = new StringBuffer(String5).reverse().toString();
+    reverse = new StringBuffer(StringInput).reverse().toString();
 
     finishedSt = reverse.substring(1, 4);
 
